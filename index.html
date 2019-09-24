@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+<style type="text/css">
+	
+
+	#a{
+border-radius: 50%;
+width: 500px;
+height: 500px;
+background-color: #33cc33;
+transition: 2s;
+	}
+
+
+
+#a:hover{
+	border-radius: 10%;
+	transition: 2s;
+	background-color: #FFFFFF;
+}
+
+	#goodgoat{
+		background-image: url(https://www.stickpng.com/assets/images/580b57fbd9996e24bc43bc17.png);
+		width: 250px;
+		height: 267px;
+		position: relative;
+		transition: 2s;
+		top: 25%;
+		left: 25%;
+	}
+	#badgoat{
+		background-image: url(file:///Users/student/Desktop/Screen%20Shot%202019-09-20%20at%209.01.42%20AM.png);
+		width: 750px;
+		height: 600px;
+		position: relative;
+		transition: 2s;
+		top: -45%;
+		left: -20%;
+		opacity: 0;
+	}
+</style>
+
+
+
+</head>
+<body>
+
+		<div id="a">
+			<div id="goodgoat"> </div>
+			<div id="badgoat"> </div>
+		</div>
+<script type="text/javascript">
+	
+var b = document.getElementById('a');
+var goodbyegoat = document.getElementById('goodgoat');
+var hellogoat = document.getElementById('badgoat');
+
+//sensor = "addEventListener"
+
+b.addEventListener("mouseenter", function() { 
+goodbyegoat.style.opacity = '0';
+hellogoat.style.opacity = '1';
+console.log("ucdr");
+});
+
+b.addEventListener("mouseout", function() { 
+goodbyegoat.style.opacity = '1';
+hellogoat.style.opacity = '0';
+});
+
+goodbyegoat.addEventListener("mouseenter", function() { 
+goodbyegoat.style.opacity = '0';
+hellogoat.style.opacity = '1';
+console.log("ucdr");
+});
+
+</script>
+
+
+</body>
+</html>
