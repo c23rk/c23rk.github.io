@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	
+
+.me{	
+	height: 200px;
+	width: 200px;
+}
+.i{	
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+	animation-name: spin;
+	/*height: 200px;
+	width: 200px;*/
+}
+#d{
+	left: 50%;
+}
+#a{
+	left: 100%;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	10% {
+		transform: rotate(36deg); 
+	}
+	20% {
+		transform: rotate(72deg); 
+	}
+	30% {
+		transform: rotate(108deg); 
+	}
+	40% {
+		transform: rotate(144deg); 
+	}
+	50% {
+		transform: rotate(180deg); 
+	}
+	60% {
+		transform: rotate(216deg); 
+	}
+	70% {
+		transform: rotate(252deg); 
+	}
+	80% {
+		transform: rotate(288deg); 
+	}
+	90% {
+		transform: rotate(324deg); 
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+</style>
+</head>
+<body>
+<img id="b" src="http://globalsugarart.com/newsimages/colorWheel-01.png" class="i me">
+<img src="http://globalsugarart.com/newsimages/colorWheel-01.png" class="i me" id="d" >
+<img src="http://globalsugarart.com/newsimages/colorWheel-01.png" class="i me" id="a">
+
+<<script type="text/javascript">
+var bon = 1
+
+document.getElementById('b').addEventListener("click", function(){
+	if (bon = 1) {
+			b.classList.remove("i");
+	bon = 0;
+		console.log(bon);
+
+	}  
+
+	if (bon = 0) {
+	b.classList.add("i")
+		bon = 1
+	}
+})
+
+
+</script> 
+</body>
+</html>
