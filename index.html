@@ -1,83 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
 <style type="text/css">
 	
 
-	#a{
-border-radius: 50%;
-width: 500px;
-height: 500px;
-background-color: #33cc33;
-transition: 2s;
-	}
-
-
-
-#a:hover{
-	border-radius: 10%;
-	transition: 2s;
-	background-color: #FFFFFF;
+.me{	
+	height: 200px;
+	width: 200px;
+}
+.i{	
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+	animation-name: spin;
+	/*height: 200px;
+	width: 200px;*/
+}
+#d{
+	left: 50%;
+}
+#a{
+	left: 100%;
 }
 
-	#goodgoat{
-		background-image: url(https://www.stickpng.com/assets/images/580b57fbd9996e24bc43bc17.png);
-		width: 250px;
-		height: 267px;
-		position: relative;
-		transition: 2s;
-		top: 25%;
-		left: 25%;
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
 	}
-	#badgoat{
-		background-image: url(file:///Users/student/Desktop/Screen%20Shot%202019-09-20%20at%209.01.42%20AM.png);
-		width: 750px;
-		height: 600px;
-		position: relative;
-		transition: 2s;
-		top: -45%;
-		left: -20%;
-		opacity: 0;
+	10% {
+		transform: rotate(36deg); 
 	}
+	20% {
+		transform: rotate(72deg); 
+	}
+	30% {
+		transform: rotate(108deg); 
+	}
+	40% {
+		transform: rotate(144deg); 
+	}
+	50% {
+		transform: rotate(180deg); 
+	}
+	60% {
+		transform: rotate(216deg); 
+	}
+	70% {
+		transform: rotate(252deg); 
+	}
+	80% {
+		transform: rotate(288deg); 
+	}
+	90% {
+		transform: rotate(324deg); 
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
 </style>
-
-
-
 </head>
 <body>
+<a href="https://docs.google.com/document/d/1v2ZaUQki2DtB0lQdZVMhJoGjZ8WTzRXVfkqf8CQo5C4/edit?usp=sharing"><img id="b" src="http://globalsugarart.com/newsimages/colorWheel-01.png" class="i me"></a><p>Journal</p>
+<a href="first.html"><img src="http://globalsugarart.com/newsimages/colorWheel-01.png" class="i me" id="d"></a><p>Goat</p>
+<a href="https://woofjs.com/full.html#FISH"><img src="http://globalsugarart.com/newsimages/colorWheel-01.png" class="i me" id="a"></a>
+<p>Fish</p>
 
-		<div id="a">
-			<div id="goodgoat"> </div>
-			<div id="badgoat"> </div>
-		</div>
 <script type="text/javascript">
-	
-var b = document.getElementById('a');
-var goodbyegoat = document.getElementById('goodgoat');
-var hellogoat = document.getElementById('badgoat');
+var bon = 1
 
-//sensor = "addEventListener"
+document.getElementById('b').addEventListener("click", function(){
+	if (bon = 1) {
+			b.classList.remove("i");
+	bon = 0;
+		console.log(bon);
 
-b.addEventListener("mouseenter", function() { 
-goodbyegoat.style.opacity = '0';
-hellogoat.style.opacity = '1';
-console.log("ucdr");
-});
+	}  
 
-b.addEventListener("mouseout", function() { 
-goodbyegoat.style.opacity = '1';
-hellogoat.style.opacity = '0';
-});
-
-goodbyegoat.addEventListener("mouseenter", function() { 
-goodbyegoat.style.opacity = '0';
-hellogoat.style.opacity = '1';
-console.log("ucdr");
-});
-
-</script>
+	if (bon = 0) {
+	b.classList.add("i")
+		bon = 1
+	}
+})
 
 
+</script> 
 </body>
 </html>
